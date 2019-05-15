@@ -14,6 +14,7 @@
 		2D2CB550226245B500B93E27 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D2CB54E226245B500B93E27 /* LaunchScreen.storyboard */; };
 		2D2CB55B226245B500B93E27 /* touchIdDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D2CB55A226245B500B93E27 /* touchIdDemoTests.swift */; };
 		2D2CB566226245B500B93E27 /* touchIdDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D2CB565226245B500B93E27 /* touchIdDemoUITests.swift */; };
+		2D2CB575226246FB00B93E27 /* LocalAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D2CB574226246FB00B93E27 /* LocalAuthentication.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		2D2CB561226245B500B93E27 /* touchIdDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = touchIdDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D2CB565226245B500B93E27 /* touchIdDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = touchIdDemoUITests.swift; sourceTree = "<group>"; };
 		2D2CB567226245B500B93E27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2D2CB574226246FB00B93E27 /* LocalAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LocalAuthentication.framework; path = System/Library/Frameworks/LocalAuthentication.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D2CB575226246FB00B93E27 /* LocalAuthentication.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +84,7 @@
 				2D2CB559226245B500B93E27 /* touchIdDemoTests */,
 				2D2CB564226245B500B93E27 /* touchIdDemoUITests */,
 				2D2CB543226245B300B93E27 /* Products */,
+				2D2CB573226246FB00B93E27 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -123,6 +127,14 @@
 				2D2CB567226245B500B93E27 /* Info.plist */,
 			);
 			path = touchIdDemoUITests;
+			sourceTree = "<group>";
+		};
+		2D2CB573226246FB00B93E27 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2D2CB574226246FB00B93E27 /* LocalAuthentication.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -435,6 +447,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4Y2PN6E5NM;
 				INFOPLIST_FILE = touchIdDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -453,6 +466,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4Y2PN6E5NM;
 				INFOPLIST_FILE = touchIdDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
